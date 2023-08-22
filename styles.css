@@ -1,0 +1,198 @@
+/* Общие стили для всех разрешений */
+
+body {
+  background-image: url(img/background-liyue.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+}
+
+.header-logo {
+  width: 60px;
+  height: 75px;
+}
+
+.header-plus {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 15px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  flex-grow: 1;
+}
+
+.card {
+  position: relative;
+  width: calc(33.33% - 20px);
+  max-width: calc(50% - 20px);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.card-content {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: blue;
+  font-size: 40px;
+  font-family: 'Arial', sans-serif;
+}
+
+.card-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 280px) {
+  .header-logo {
+    width: 40px;
+    height: 50px;
+  }
+
+  .header-plus {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 200px;
+    max-width: none;
+    margin-right: 0;
+    height: 300px;
+  }
+
+  .card-content {
+    position: static;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .card-image {
+    top: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 280px) {
+  .header-logo {
+    width: 40px;
+    height: 50px;
+  }
+
+  .header-plus {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    height: 300px;
+  }
+
+  .card-content {
+    position: static;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .card-image {
+    top: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-logo {
+    width: 40px;
+    height: 50px;
+  }
+
+  .header-plus {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    height: 300px;
+  }
+
+  .card-content {
+    position: static;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .card-image {
+    top: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-logo {
+    width: 50px;
+    height: 60px;
+  }
+
+  .header-plus {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: calc(50% - 10px);
+    max-width: none;
+    margin-right: 10px;
+    height: 400px;
+  }
+
+  .card-content {
+    position: static;
+    padding: 10px;
+    font-size: 28px;
+  }
+
+  .card-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+}
